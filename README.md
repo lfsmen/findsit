@@ -54,3 +54,7 @@ read event
   if "deactivated"
     - analytics information regarding state deactivation
 store event log
+
+# data
+Seat: <state>,<table_id>
+Table: <table_id>,<state>,<timestamp>
