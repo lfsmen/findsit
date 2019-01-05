@@ -5,7 +5,7 @@ Small project where the purpose is to build a seat occupancy sensor using a rasp
 
 # guiding principles - gateway
 
-- Real-time Communication with a device that returns 0 or 1.
+- Real-time communication with a device that returns 0 or 1.
   - To do this, constantly look for signal
 - Spatial location of all such devices in an area.
   - Previous mapping is needed - create an occupancy matrix with MxN, that represents an area in m2
@@ -18,3 +18,27 @@ Small project where the purpose is to build a seat occupancy sensor using a rasp
 # guiding principles - sensor pairing
 - RF tags under seat, with a piezoelectric sensor.
 - When pressure is effected on the seat, the RF tag triggers and communicates with the closest table.
+- When a table receives a communication from a seat, it changes its state to 1.
+- A table is in the '1' state for as long as a seat is under pressure.
+
+
+# algorithm - heatmap
+
+for each sensor in the area matrix
+  read state
+  if state = 1
+    activated
+  else if state = 0
+    deactivated
+  endif.
+endfor.
+
+read area matrix and display occupancy
+
+# algorithm - read state
+
+communicate with table sensors (wifi)
+  read tag
+  read state
+end communication
+
