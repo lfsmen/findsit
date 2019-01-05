@@ -42,3 +42,11 @@ communicate with table sensors (wifi)
   read state
 end communication
 
+# algorithm - event reader
+
+read event
+  if "activated"
+    - analytics information regarding state activation
+  if "deactivated"
+    - analytics information regarding state deactivation
+store event log
