@@ -3,6 +3,10 @@ Findsit - Seat sensor
 
 Small project where the purpose is to build a seat occupancy sensor using a raspberry PI and RF tags.
 
+# difficulties / how to do it's
+- Communication between IOT sensors and Raspberry Pi
+How to I create a constant communication between the sensors and the raspberry pi? and how can my programming language interpret the results?
+
 # guiding principles - gateway
 
 - Real-time communication with a device that returns 0 or 1.
