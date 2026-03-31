@@ -1,0 +1,36 @@
+matrix:
+  rows: 4
+  cols: 6
+
+polling:
+  interval_seconds: 2.0
+  sensor_timeout_seconds: 1.0
+
+display:
+  refresh_rate_seconds: 1.0
+  color: true
+
+logging:
+  log_file: "events.jsonl"
+
+sensors:
+  - table_id: "T01"
+    host: "192.168.1.101"
+    port: 9000
+    row: 0
+    col: 0
+  - table_id: "T02"
+    host: "192.168.1.102"
+    port: 9000
+    row: 0
+    col: 1
+  - table_id: "T03"
+    host: "192.168.1.103"
+    port: 9000
+    row: 1
+    col: 0
+  - table_id: "T04"
+    host: "192.168.1.104"
+    port: 9000
+    row: 1
+    col: 1
